@@ -4,8 +4,7 @@ class Artist < ActiveRecord::Base
 
   def get_genre_of_first_song
     #return the genre of the artist's first saved song
-    first_song = find_by(name:"#{self.name}")
-    binding.pry
+    self.songs
   end
 
   def song_count
