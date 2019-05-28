@@ -11,6 +11,7 @@ class Song < ActiveRecord::Base
     Artist.create(name: "Drake")
     self.artist_id = Artist.find_by(name: "Drake").id
     self.save
+    Artist.find_by(id: self.artist_id)
     binding.pry
   end
 end
