@@ -4,7 +4,7 @@ class Song < ActiveRecord::Base
 
   def get_genre_name
     Genre.find_by(id: self.genre_id)
-    binding.pry
+    # binding.pry
   end
 
   def drake_made_this
